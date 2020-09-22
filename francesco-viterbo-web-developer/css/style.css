@@ -70,27 +70,27 @@ html {
     box-shadow: 0 0 5px #003303;
 }
 .arrow-1 {
-    transform: translate(-82% , -200%) rotate(45deg);
+    transform: translate(-82% , -500%) rotate(45deg);
     border-top-left-radius: 200%;
 }
 .arrow-2 {
-    transform: translate(-18%, -200%) rotate(-45deg);
+    transform: translate(-18%, -500%) rotate(-45deg);
     border-top-right-radius: 200%;
 }
 .arrow-3 {
-    transform: translate(-82% , 200%) rotate(45deg);
+    transform: translate(-82% , 0) rotate(45deg);
     border-top-left-radius: 200%;
 }
 .arrow-4 {
-    transform: translate(-18%, 200%) rotate(-45deg);
+    transform: translate(-18%, 0) rotate(-45deg);
     border-top-right-radius: 200%;
 }
 .arrow-5 {
-    transform: translate(-82% , 200%) rotate(45deg);
+    transform: translate(-82% , 500%) rotate(45deg);
     border-top-left-radius: 200%;
 }
 .arrow-6 {
-    transform: translate(-18%, 200%) rotate(-45deg);
+    transform: translate(-18%, 500%) rotate(-45deg);
     border-top-right-radius: 200%;
 }
 
