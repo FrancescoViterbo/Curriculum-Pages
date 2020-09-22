@@ -26,8 +26,8 @@ html {
     z-index: 2;
 }
 .scroll-down {
-    width: 10rem;
-    height: 5rem;
+    width: 150px;
+    height: 70px;
     position: absolute;
     left: 50%;
     bottom: 2.5%;
@@ -60,7 +60,7 @@ html {
     height: 3px;
     margin-bottom: 2px;
     /* transition: all .2s; */
-    width: 25px;
+    width: 55px;
 }
 .scroll-down:hover .arrows {
     animation: none;
@@ -70,27 +70,27 @@ html {
     box-shadow: 0 0 5px #003303;
 }
 .arrow-1 {
-    transform: translate(-82% , -500%) rotate(45deg);
+    transform: translate(-92% , -500%) rotate(30deg);
     border-top-left-radius: 200%;
 }
 .arrow-2 {
-    transform: translate(-18%, -500%) rotate(-45deg);
+    transform: translate(-8%, -500%) rotate(-30deg);
     border-top-right-radius: 200%;
 }
 .arrow-3 {
-    transform: translate(-82% , 0) rotate(45deg);
+    transform: translate(-92% , 0) rotate(30deg);
     border-top-left-radius: 200%;
 }
 .arrow-4 {
-    transform: translate(-18%, 0) rotate(-45deg);
+    transform: translate(-8%, 0) rotate(-30deg);
     border-top-right-radius: 200%;
 }
 .arrow-5 {
-    transform: translate(-82% , 500%) rotate(45deg);
+    transform: translate(-92% , 500%) rotate(30deg);
     border-top-left-radius: 200%;
 }
 .arrow-6 {
-    transform: translate(-18%, 500%) rotate(-45deg);
+    transform: translate(-8%, 500%) rotate(-30deg);
     border-top-right-radius: 200%;
 }
 
