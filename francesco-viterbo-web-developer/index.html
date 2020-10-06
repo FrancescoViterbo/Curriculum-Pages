@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Francesco Viterbo - Web Developer</title>
+        <link rel="stylesheet" href="css/lib/framework.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
@@ -10,12 +11,12 @@
     <body>
         <div class="background-gradient"></div>
         <nav>
-            <div id="logo">Francesco Viterbo</div>
+            <div id="logo"><a href="#about-me">Francesco Viterbo</a></div>
             <ul>
                 <!-- <li><a href="#">About</a></li> -->
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Curriculum</a></li>
-                <li><a href="#">Contacts</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
         <main>
@@ -30,7 +31,7 @@
                 <div class="secondary-content">
 
                 </div>
-                <a href="#curriculum-section" class="scroll">
+                <a href="#curriculum" class="scroll">
                     <div class="scroll-down">
                         <div class="arrows">
                             <span class="scroll-arrow arrow-1"></span>
@@ -47,6 +48,69 @@
                     </div>
                 </a>
             </section>
+
+            <section class="monopage" id="curriculum">
+                <div class="main-content">
+                    <h2>Curriculum</h2>
+                    <p>Le mie skills da programmatore:</p>
+                </div>
+                <div class="secondary-content">
+                    <div class="grid-container container-full-width">
+                        <div class="row">
+                            <div id="skill1" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/icons8-html-5.svg" alt="html5">
+                                <h5 class="skill-description">HTML5</h5>
+                            </div>
+                            <div id="skill2" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/css3_logo_and_wordmark.svg" alt="css3">
+                                <h5 class="skill-description">CSS3</h5>
+                            </div>
+                            <div id="skill3" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/icons8-logo-php.svg" alt="php">
+                                <h5 class="skill-description">Php</h5>
+                            </div>
+                            <div id="skill4" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/icons8-javascript.svg" alt="javascript">
+                                <h5 class="skill-description">Javascript</h5>
+                            </div>
+                            <div id="skill5" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/sql.svg" alt="sql">
+                                <h5 class="skill-description">Sql</h5>
+                            </div>
+                            <div id="skill6" class="col-xs-6 col-md-4 col-lg-3">
+                                <img src="images/svgs/django-logo-negative.svg" alt="django">
+                                <h5 class="skill-description">Diango 3.x</h5>
+                            </div>
+                            <div id="skill7" class="col-xs-6 col-md-6 col-lg-3">
+                                <img src="images/svgs/icons8-python.svg" alt="python">
+                                <h5 class="skill-description">Python 3.x</h5>
+                            </div>
+                            <div id="skill8" class="col-xs-6 col-md-6 col-lg-3">
+                                <img src="images/svgs/icons8-github.svg" alt="github">
+                                <h5 class="skill-description">Git / Github</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#portfolio" class="scroll">
+                    <div class="scroll-down">
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-1"></span>
+                            <span class="scroll-arrow arrow-2"></span>
+                        </div>
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-3"></span>
+                            <span class="scroll-arrow arrow-4"></span>
+                        </div>
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-5"></span>
+                            <span class="scroll-arrow arrow-6"></span>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
             <section class="monopage" id="portfolio">
                 <div class="main-content">
                     <h2>Portfolio Siti Web</h2>
@@ -60,7 +124,42 @@
                         <div class="grid-item">5</div>
                     </div>
                 </div>
+
+                <a href="#contacts" class="scroll">
+                    <div class="scroll-down">
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-1"></span>
+                            <span class="scroll-arrow arrow-2"></span>
+                        </div>
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-3"></span>
+                            <span class="scroll-arrow arrow-4"></span>
+                        </div>
+                        <div class="arrows">
+                            <span class="scroll-arrow arrow-5"></span>
+                            <span class="scroll-arrow arrow-6"></span>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="monopage" id="contacts">
+                <div class="main-content">
+                    <h2>Contatti</h2>
+                </div>
+                <div class="secondary-content">
+                    <div class="grid-container">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                        <div class="grid-item">4</div>
+                        <div class="grid-item">5</div>
+                    </div>
+                </div>
             </section>
         </main>
+        <script type="text/javascript" src="script/script.js">
+
+        </script>
     </body>
 </html>

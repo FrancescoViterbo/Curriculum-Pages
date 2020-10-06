@@ -19,6 +19,7 @@ html {
     --background-color2: rgb(69, 255, 187);
     --shadow-color1: #c445ff;
     --shadow-color2: #45fff3;
+    scroll-behavior: smooth;
 }
 h1 {
     font-size: var(--header1);
@@ -75,7 +76,7 @@ a:hover {
 }
 .scroll-down > .arrows {
     /* transition: all 1.5s ease-in-out; */
-    animation: rotateScrollBtn2 5s ease-in-out 6s 2;
+    /* animation: rotateScrollBtn2 5s ease-in-out 6s 2; */
 }
 .scroll-down:hover {
     background: radial-gradient(circle, rgba(69, 255, 187, 0.5), rgba(196, 69, 255, 0.15) 20%, rgba(255, 255, 255, 0) 40%);
@@ -140,7 +141,7 @@ a:hover {
 /* Navbar */
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -171,7 +172,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: calc(1.5rem + 1vw);
+    margin-left: calc(2.5rem + 1vw);
 }
 
 nav a {
@@ -236,10 +237,95 @@ h1 span {
 
 /* About Page end */
 
+/* General */
+
+#curriculum .main-content, #portfolio .main-content, #contacts .main-content {
+    margin: 15rem 10% 4rem 10%;
+}
+
+#curriculum .secondary-content, #portfolio .secondary-content, #contacts .secondary-content {
+    margin: 4rem 10%;
+}
+
+#curriculum h1, #portfolio h1, #contacts h1 {
+    margin: 4rem 6rem;
+}
+#curriculum h2, #portfolio h2, #contacts h2 {
+    margin: 4rem 6rem;
+}
+#curriculum h3, #portfolio h3, #contacts h3 {
+    margin: 4rem 6rem;
+}
+#curriculum h4, #portfolio h4, #contacts h4 {
+    margin: 4rem 6rem;
+}
+#curriculum h5, #portfolio h5, #contacts h5 {
+    margin: 2rem;
+}
+#curriculum p, #portfolio p, #contacts p {
+    margin: 8rem 10rem;
+}
+
+/* General end */
+
+/* Curriculum Page */
+
+#curriculum .secondary-content {
+    margin-top: 10vh;
+}
+
+#curriculum .row>div {
+    text-align: center;
+    min-height: 25vh;
+}
+
+#curriculum img {
+    max-height: 100px;
+    cursor: pointer;
+}
+
+.skill-description {
+    font-size: 2rem;
+    display: none;
+    /* transition: all 1s; da fixare */
+}
+
+/* Skills Settings for animations */
+#skill1 {
+    transform: translate(-150vh, 0);
+}
+#skill2 {
+    transform: translate(-150vh, 0);
+}
+#skill3 {
+    transform: translate(-220vh, 0);
+}
+#skill4 {
+    transform: translate(-250vh, 0);
+}
+#skill5 {
+    transform: translate(250vh, 0);
+}
+#skill6 {
+    transform: translate(220vh, 0);
+}
+#skill7 {
+    transform: translate(150vh, 0);
+}
+#skill8 {
+    transform: translate(150vh, 0);
+}
+/* Skills Settings for animations end */
+
+#curriculum img:hover~.skill-description {
+    display: block;
+}
+
+/* Curriculum Page end */
+
 /* Portfolio Page */
 
 #portfolio h2 {
-    margin: 5rem;
     text-align: right;
     padding: 0 10% 0 10%;
 }
@@ -253,7 +339,7 @@ h1 span {
 
 /* Media Queries */
 
-@media screen and (max-width: 1079px) {
+@media screen and (min-width: 651px) and (max-width: 1079px) {
     html {
         --header4: 1.4rem;
         --header5: 1.7rem;
@@ -262,7 +348,7 @@ h1 span {
         padding-left: 5%;
     }
     #avatar-container img {
-        height: 150px;
+        height: 220px;
     }
     #avatar-container h1 {
         top: calc(20vh + 120px);
@@ -273,13 +359,19 @@ h1 span {
         margin-top: 25vh;
         text-align: right;
     }
+    #curriculum .row>div {
+        min-height: 18vh;
+    }
+    #curriculum img {
+        max-height: 85px;
+    }
     .scroll-down {
         width: 120px;
         height: 50px;
-        box-shadow: none;
+        /* box-shadow: none; */
     }
     .scroll-arrow {
-        box-shadow: 0 0 10px white, 0 0 10px inset white;
+        /* box-shadow: 0 0 10px white, 0 0 10px inset white; */
         height: 2px;
         width: 35px;
     }
@@ -292,14 +384,80 @@ h1 span {
     nav ul {
         display: none;
     }
+    #avatar-container img {
+        height: 150px;
+    }
     #avatar-container h1 {
         left: 0;
         text-align: right;
+    }
+    #avatar-container p {
+        margin-top: 30vh;
+        text-align: right;
+    }
+    #curriculum .main-content, #portfolio .main-content, #contacts .main-content {
+    margin: 7rem 10% 4rem 10%;
+    }
+    #curriculum .secondary-content {
+    margin-top: 5vh;
+    }
+    #curriculum p {
+        margin: 2rem;
+    }
+    #curriculum .row>div {
+        min-height: 15vh;
+    }
+    #curriculum img {
+        max-height: 50px;
     }
 }
 
 @media screen and (max-height: 650px) {
     .scroll-down {
         display: none;
+    }
+    #curriculum img {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 770px) {
+    #curriculum .row>div {
+        min-height: 15vh;
+    }
+}
+
+@media screen and (max-height: 690px) {
+    .skill-description {
+        display: block;
+    }
+}
+
+/* Animations */
+
+@keyframes enterAnimation {
+  from {
+    transform: translate(-150vh, 0%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes enterFromRightAnimation {
+  from {
+    transform: translate(150vh, 0%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes appearAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
