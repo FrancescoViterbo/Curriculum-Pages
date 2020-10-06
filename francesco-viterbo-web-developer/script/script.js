@@ -13,9 +13,12 @@ function inViewport( element ){
 
 }
 
+
+// Animations for skills section
+
 var screenWidth = window.screen.availWidth;
 
-var curriculum = document.getElementById('curriculum');
+// var curriculum = document.getElementById('curriculum');
 var skill1 = document.getElementById('skill1');
 var skill2 = document.getElementById('skill2');
 var skill3 = document.getElementById('skill3');
@@ -56,3 +59,5 @@ document.addEventListener('scroll', event => {
         skill8.style.animation = "enterFromRightAnimation 1s 3.5s ease-out forwards"
     }
 })
+
+// Animation for instant-scroll
