@@ -61,3 +61,29 @@ document.addEventListener('scroll', event => {
 })
 
 // Animation for instant-scroll
+
+
+// Project Select
+
+var project1 = document.getElementById('project1');
+var project2 = document.getElementById('project2');
+var project3 = document.getElementById('project3');
+
+
+skill1.onclick = function() {selectProject(project1)};
+skill2.onclick = function() {selectProject(project2)};
+skill3.onclick = function() {selectProject(project3)};
+
+
+var projectActive;
+
+function selectProject(projectNumb) {
+    if (projectActive === projectNumb) {
+        projectNumb.style.border = "";
+        projectActive = undefined;
+    } else {
+        projectNumb.style.border = "5px solid black";
+        projectActive = projectNumb;
+    }
+    console.log(projectActive);
+}
